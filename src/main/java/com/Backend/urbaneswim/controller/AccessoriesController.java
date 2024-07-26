@@ -33,6 +33,7 @@ public class AccessoriesController {
     }
 
     // get prod by ID
+    @CrossOrigin
     @GetMapping("/products/{Id}")
     public Accessories getProdById(@PathVariable int Id) {
         return service.getProdById(Id);
